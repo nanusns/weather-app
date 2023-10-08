@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Lobster&family=Montserrat:wght@500&family=Oxygen:wght@300&family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="container">
+        <h3 class="brand">My Weather</h3>
+        <div>
+          <h1 class="temp">Loading....</h1>
+          <div class="city-time">
+            <h1 class="name">Bhopal</h1>
+            <small>
+              <span id="time_el"></span>
+            </small>
+          </div>
+          <div class="weather">
+            <img src="day/113.png" alt="" height="50" width="50" />
+            <span class="condition"></span>
+          </div>
+        </div>
+      </div>
+      <div class="panel">
+        <form action="" id="localinput">
+          <input type="text" placeholder="search loaction" class="search" />
+          <button class="submit" type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </button>
+          <button id="add_btn">ADD</button>
+          <p id="text1">Temperatures of searched cities:</p>
+        </form>
+        <ul class="cities">
+          <li>
+            <span class="place">Guna:</span>
+            <span class="city">Loading....</span>
+          </li>
+          <li>
+            <span class="place">Gwalior:</span>
+            <span class="city">Loading....</span>
+          </li>
+          <li>
+            <span class="place">Jabalpur:</span>
+            <span class="city">Loading....</span>
+          </li>
+          <li>
+            <span class="place">Indore:</span>
+            <span class="city">Loading....</span>
+          </li>
+          <li>
+            <span class="place">Jhansi:</span>
+            <span class="city">Loading....</span>
+          </li>
+        </ul>
+
+        <ul class="details">
+          <h4 id="weather_details">Weather Details</h4>
+          <li>
+            <span>Cloud_pct:</span>
+            <span>Loading...</span>
+          </li>
+          <li>
+            <span>Humidity:</span>
+            <span>Loading...</span>
+          </li>
+          <li>
+            <span>Minimum temp:</span>
+            <span>Loading...</span>
+          </li>
+          <li>
+            <span>Maximum temp:</span>
+            <span>Loading...</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
