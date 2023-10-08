@@ -51,6 +51,7 @@ const getWeather = (city, property) => {
 };
 
 const showData = (city, property) => {
+  city = city.charAt(0).toUpperCase() + city.slice(1);
   name_el.innerHTML = `${city}`;
   temperature.innerHTML = property + `&deg;C`;
 };
@@ -65,10 +66,11 @@ getDefaulttemp();
 
 search_btn.addEventListener("click", async (e) => {
   e.preventDefault();
-  const cityname = document.querySelector(".search").value;
+  let cityname = document.querySelector(".search").value;
   getInfo(cityname);
   const data = await getWeather(cityname, "temp");
   showData(cityname, data);
+  cityname = cityname.charAt(0).toUpperCase() + cityname.slice(1);
   weather_details.innerHTML = `Weather Details of ${cityname}:`;
 });
 
